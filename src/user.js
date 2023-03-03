@@ -1,6 +1,6 @@
 export const getUser = () => {
     const users = JSON.parse(localStorage.getItem("users"));
-    return users.find(u => u.login);
+    return users?.find(u => u.login);
 }
 
 export const validateEmail = (email) => {
